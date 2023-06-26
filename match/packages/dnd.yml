@@ -1,0 +1,19 @@
+matches:
+#D&D related
+- trigger: ";emp"
+  replace: "Your requested change has been made. If you have any question please feel free to let me know."
+
+#D&D Note related
+- trigger: ";yml.aff.npc"
+  replace: |
+            ---
+            type: npc
+            affiliation: The Chained
+            ---
+
+- regex: ";aff.roster\\((?G<group>.*)\\)"
+  replace: |
+            ```dataview
+            list where affiliation = {{group}}
+
+            ```

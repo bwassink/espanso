@@ -1,0 +1,10 @@
+matches:
+#ticket response
+- trigger: ";contentTicket"
+  replace: "Your requested change has been made. If you have any question please feel free to let me know."
+- trigger: ";agendaTicket"
+  replace: "Your requested agenda has been posted. If you have any question please feel free to let me know."
+- trigger: ";wilcotxgov"
+  replace: "https://www.wilcotx.gov"
+- trigger: "wilcoorg"
+  replace: "https://www.wilco.org"
